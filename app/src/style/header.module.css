@@ -1,0 +1,74 @@
+.header_area{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logo img{
+    height: 25px;
+    margin-right: 10px;position: relative;
+    bottom: 4px;
+}
+span.title{
+    font-size: 24px;
+}
+.logo:hover span.title{
+    transition: color 0.2s;
+    color: rgb(137, 137, 137);
+}
+
+.wallet_area{
+    display: flex;
+    justify-content: center;
+}
+.eth_balance_area{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 4px 26px 4px 16px;
+    position: relative;
+    right: -16px;
+    z-index: 1;
+    border-radius: 16px 0 0 16px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+span.wallet{
+    position: relative;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+span.wallet:hover{
+    cursor: pointer;
+    transition:  background-color 0.2s;
+    background-color: rgb(65, 65, 65);
+}
+span.network_area{
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    color: rgb(171, 38, 38);
+    text-align: right;
+}

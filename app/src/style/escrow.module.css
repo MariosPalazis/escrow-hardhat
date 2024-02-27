@@ -1,0 +1,123 @@
+.contract_area{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contract_row{
+    background-color: white;
+    width: 100%;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+}
+.contract_row_clickable{
+    text-decoration: none;
+    display: block;
+    background-color: white;
+    width: 100%;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.contract_row_clickable img{
+    height: 14px;
+    margin-left: 5px;
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .contract_row_clickable img{
+        display: inline;
+    }
+}
+.contract_row_clickable:hover img{
+    display: inline;
+}
+.contract_row_clickable:hover{
+    transition: background-color 0.2s;
+    background-color: #dcdcdc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.contract_button{
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    width: 150px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.contract_button:hover{
+    transition: background-color 0.2s;
+    background-color: rgb(65, 65, 65);
+}
+.contract_button_approved{
+    background-color: rgb(52, 189, 105);
+    color: white;
+    padding: 10px 0;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.contract_button_loading{
+    background-color: rgb(10, 9, 9);
+    color: white;
+    padding: 4px 0;
+    border-radius: 4px;
+    cursor: wait;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.loading_gif{
+    height: 30px;
+}
+
+
+.yes_pill{
+    background-color: rgb(52, 189, 105);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+.no_pill{
+    background-color: rgb(243, 238, 158);
+    color: black;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.form_message{
+    color: rgb(171, 38, 38);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.form_status{
+    color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.form_deploy_tx{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
